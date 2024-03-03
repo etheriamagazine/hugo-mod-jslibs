@@ -6,15 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm-run-all --parallel build:*",
-    "build:preact-bundle": "microbundle build --raw --no-generateTypes -f cjs,esm,umd --cwd preact-bundle"
+    "build:@preact/bundle": "microbundle build --raw -f modern --cwd @preact/bundle"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
-    "microbundle": "^0.15.1",
     "@preact/signals": "^1.2.2",
     "htm": "^3.1.1",
+    "npm-run-all": "^4.1.5",
+    "microbundle": "^0.15.1",
     "preact": "^10.19.6"     
   }
 }

@@ -20,6 +20,16 @@ import {
     cloneElement,
     toChildArray,
   } from "preact";
+
+  import {
+    batch,
+    computed,
+    effect,
+    useComputed,
+    useSignal,
+    signal,
+  } from "@preact/signals";
+  
   import {
     useState,
     useReducer,
@@ -33,16 +43,9 @@ import {
     useDebugValue,
     useErrorBoundary,
   } from "preact/hooks";
-  import htm from "htm";
-  import {
-    batch,
-    computed,
-    effect,
-    useComputed,
-    useSignal,
-    signal,
-  } from "@preact/signals";
   
+  import htm from "htm";
+
   const html = htm.bind(h);
   
   export {
