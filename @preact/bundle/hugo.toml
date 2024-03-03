@@ -1,4 +1,0 @@
-[module]
-  [[module.mounts]]
-    source = "dist/@preact/bundle.js"
-    target = "assets/@preact/bundle.js"
